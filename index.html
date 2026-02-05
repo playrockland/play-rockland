@@ -4,35 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PLAY Rockland</title>
+  <meta name="description" content="Community-first adult recreation leagues in Rockland County, NY." />
 
   <style>
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      color: #0f172a;
       background: #ffffff;
+      color: #0f172a;
     }
 
+    /* PAGE WRAPPER (normal margins) */
     .page {
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 24px;
     }
 
-    /* TOP SECTION (CENTERED ONLY) */
+    /* TOP LOGO + TAGLINE (CENTERED ONLY) */
     .top {
       text-align: center;
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
 
     .top img {
-      max-width: 220px;
+      width: min(240px, 70vw);
+      height: auto;
       margin-bottom: 14px;
     }
 
     .tagline {
       font-size: 18px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .green { color: #22c55e; }
@@ -40,10 +43,10 @@
     .yellow{ color: #f59e0b; }
     .red   { color: #ef4444; }
 
-    /* BODY TEXT (NORMAL MARGINS) */
+    /* MAIN TEXT */
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #475569;
       margin: 18px 0;
     }
@@ -52,25 +55,45 @@
       color: #0f172a;
     }
 
-    .meta {
-      margin-top: 12px;
-    }
-
+    /* BUTTON */
     .button {
       display: inline-block;
-      margin-top: 24px;
-      padding: 14px 22px;
+      margin-top: 22px;
+      padding: 14px 24px;
       background: #0f172a;
       color: #ffffff;
       text-decoration: none;
-      font-weight: 700;
-      border-radius: 10px;
+      font-weight: 800;
+      border-radius: 12px;
     }
 
+    /* FOOTER */
     footer {
-      margin-top: 60px;
+      margin-top: 56px;
       font-size: 14px;
       color: #64748b;
+    }
+
+    /* MOBILE FRIENDLY */
+    @media (max-width: 600px) {
+      .page {
+        padding: 28px 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+      }
     }
   </style>
 </head>
@@ -78,9 +101,9 @@
 <body>
   <div class="page">
 
-    <!-- TOP CENTERED -->
+    <!-- TOP SECTION -->
     <div class="top">
-      <img src="Logo.jpg" alt="PLAY Rockland logo">
+      <img src="Logo.jpg" alt="PLAY Rockland logo" />
 
       <div class="tagline">
         <span class="green">Play</span> •
@@ -90,14 +113,14 @@
       </div>
     </div>
 
-    <!-- NORMAL CONTENT -->
+    <!-- BODY CONTENT -->
     <p>
       PLAY Rockland is a community-first adult recreation league in Rockland County, NY to bring people together through
-      <strong>fun, social, community-driven play</strong>.
-      We’re starting with casual outdoor leagues (like cornhole) and expanding based on interest.
+      <strong>fun, social, community-driven play</strong>. We’re starting with casual outdoor leagues (like cornhole) and
+      expanding based on interest.
     </p>
 
-    <p class="meta">
+    <p>
       Weeknight games • Outdoor parks • All skill levels welcome
     </p>
 
